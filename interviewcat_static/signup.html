@@ -1,0 +1,213 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://img.collegedekhocdn.com/media/img/institute/logo/tce_logo.png"
+      type="image/x-icon"
+    />
+    <title>InterviewCat</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="./css/signup.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  </head>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <body>
+    <!-- <div class="container">
+      <div class="navbar">
+        <div class="navbar-content">
+          <a href="./index.html">Home</a>
+          <a href="#placement_experince">Interview Experience</a>
+          <a href="#about">About us</a>
+          <a href="#contact">Contact us</a>
+          <a href="./login.html">Login</a>
+        </div>
+      </div>
+    </div>
+    <h1>login</h1> -->
+    <div class="navbar">
+      <div class="container flex">
+        <!-- just not to disturb container class 
+                for flexbox layout flex name is added-->
+
+        <div>
+          <a class="logo" href="./index.html">
+            <div class="college_logo">
+              <div>
+                <img
+                  src="https://tcenet.tce.edu/logo.png"
+                  width="100%"
+                  height="60px"
+                />
+              </div>
+              <div>
+                <h1>InterviewCat</h1>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#contact">Contact us</a></li>
+            <li><a href="./placement.html">Interview Experience</a></li>
+            <li><a href="./faq.html">FAQs</a></li>
+            <li><a href="./signup.html">Sign Up/Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Showcase -->
+    <section class="showcase-signup">
+      <div class="container showcase-signup-flex">
+        <div class="showcase-signup-img">
+          <lottie-player
+            src="https://assets6.lottiefiles.com/packages/lf20_ezszd2zq.json"
+            background="transparent"
+            speed="1"
+            style="width: 500px; height: 440px"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+
+        <div class="showcase-form card">
+          <h2>Sign up</h2>
+          <form method="POST">
+            <div class="form-control">
+              <input
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Full name"
+                required
+              />
+            </div>
+
+            <div class="form-control">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+                pattern="^[A-Za-z0-9._%+-]+@tce.edu$"
+              />
+            </div>
+
+            <div class="form-control">
+              <!-- <form id="phone"> -->
+              <input
+                type="tel"
+                id="phone_number"
+                name="phone_number"
+                placeholder="Phone number"
+                maxlength="10"
+                required
+              />
+              <!-- <input
+                  type="button"
+                  class="btn"
+                  value="Verify"
+                  onclick="process(event)"
+                /> -->
+              <!-- </form> -->
+              <!-- <div class="alert alert-info" style="display: none"></div> -->
+            </div>
+            <div class="form-control">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+                minlength="8"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <input
+                type="password"
+                name="cnf_password"
+                id="cnf_password"
+                placeholder="Confirm Password"
+                minlength="8"
+                required
+              />
+            </div>
+            <!-- value="Send" -->
+            <input type="submit" value="Sign Up" class="btn btn-primary" />
+            <div class="form-signup">
+              <p>Have account already?</p>
+              <a href="./index.html"><strong>Login here</strong></a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-container">
+          <div class="left">
+            <h1>InterviewCat</h1>
+            <p>Made with <span>❤️</span> for your placements</p>
+          </div>
+
+          <div class="middle">
+            <h3>Interview tips at your inbox do subscribe here!!</h3>
+            <form class="form-footer">
+              <input
+                type="email"
+                required
+                placeholder="Your email here"
+                name="email"
+              />
+              <input
+                type="submit"
+                value="Subscribe"
+                name="submit"
+                class="btn-footer"
+              />
+            </form>
+          </div>
+
+          <div class="right">
+            <h2>Follow us on</h2>
+            <div class="icons">
+              <a href="https://www.facebook.com/" target="_blank"
+                ><img src="./images/facebook.png" alt="facebook"
+              /></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><img src="./images/instagram.png" alt="instagram"
+              /></a>
+              <a href="https://www.twitter.com/" target="_blank"
+                ><img src="./images/twitter.png" alt="twitter"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="./js/script.js"></script>
+</html>

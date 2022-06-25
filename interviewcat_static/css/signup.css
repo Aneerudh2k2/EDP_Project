@@ -1,0 +1,389 @@
+/* * {
+  margin: 0;
+}
+
+.container {
+  max-width: 500px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #7ac0f8;
+  padding: 25px;
+  width: 100%;
+  position: fixed;
+}
+
+.navbar-content {
+  width: 60%;
+  padding: 5px;
+  display: flex;
+  text-decoration: none;
+  justify-content: space-around;
+}
+
+.navbar-content a {
+  text-decoration: none;
+  font-family: "Montserrat", Sans;
+  color: #fff;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
+:root {
+  --primary-color: #7ac0f8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Mulish", "Lato", sans-serif;
+  color: #333;
+  line-height: 1.6;
+  /* background-color: var(--primary-color); */
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+/* till up basic styles */
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary-color);
+  color: #fff;
+  height: 70px;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.navbar .flex .college_logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  padding: 10px;
+  color: #fff;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: 2px #fff solid;
+}
+
+/* Showcase */
+.showcase {
+  background-color: var(--primary-color);
+  height: 400px;
+  color: #fff;
+  position: relative;
+}
+
+.showcase-text h1 {
+  font-size: 40px;
+}
+
+.showcase-text p {
+  margin: 20px 0;
+}
+
+.showcase-text a {
+  color: #fff;
+  font-size: 17px;
+}
+
+.showcase .grid {
+  /* grid-template-columns: 50% 45%; */
+  overflow: visible;
+  /* becoz card trigered scroll 
+  so making it overflow makes a new design*/
+  gap: 30px;
+}
+
+.showcase-form {
+  position: relative;
+  top: 60px;
+  height: 340px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+  justify-self: flex-end;
+  transform-style: preserve-3d;
+  /* transition: 2s ease-in-out; */
+  /* backface-visibility: hidden; */
+}
+
+.showcase-form .form-control input {
+  border: none;
+}
+
+.showcase-form .form-control {
+  margin: 30px 0;
+}
+
+.showcase-form input[type="text"],
+.showcase-form input[type="email"],
+.showcase-form input[type="password"],
+.showcase-form input[type="tel"] {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
+
+.showcase::before,
+.showcase::after {
+  position: absolute;
+  content: "";
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background: #fff;
+  transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+}
+
+/* Signup page styles */
+.showcase-signup {
+  background-color: var(--primary-color);
+  height: 480px;
+  color: #fff;
+  position: relative;
+}
+
+.showcase-signup .showcase-signup-flex {
+  overflow: visible;
+}
+
+.showcase-form .form-signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.showcase-form .form-signup a {
+  text-decoration: none;
+  margin-left: 6px;
+}
+
+.showcase-form input:focus {
+  outline: none;
+}
+
+.showcase-signup::before,
+.showcase-signup::after {
+  position: absolute;
+  content: "";
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background: #fff;
+  /* background: var(--primary-color); */
+  transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+}
+
+.form-signup input {
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.showcase-signup .card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px;
+  height: 100%;
+  /* transform-style: preserve-3d; */
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 50px;
+}
+
+.footer-container .left p {
+  font-size: larger;
+}
+
+.footer-container .left span {
+  color: red;
+}
+
+.footer-container .middle .btn-footer {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: #0a1535;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+}
+
+.footer-container .middle h3 {
+  font-weight: 300;
+}
+
+.form-footer {
+  position: relative;
+  height: 100%;
+  width: 400px;
+  padding: 20px;
+  z-index: 100;
+}
+
+.form-footer input {
+  border: none;
+  background: #fff;
+  font-size: 15px;
+  margin-left: 5px;
+  cursor: pointer;
+  padding: 5px;
+  height: 40px;
+  width: fit-content;
+  border-radius: 5px;
+}
+
+.form-footer input:focus {
+  outline: none;
+}
+
+.footer-container .right .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-container .right img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto; /* top-bottom = 0 left-right = auto*/
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px;
+  /* transform-style: preserve-3d; */
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px #fff solid;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.showcase-signup-flex {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid {
+  /* generally grid works on rows and columns */
+  display: grid;
+  /* grid-template-columns: 300px 200px;instead of pixels 
+  using fractions is helpful for different screen sizes*/
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

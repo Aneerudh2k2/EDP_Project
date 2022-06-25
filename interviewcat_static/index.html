@@ -1,0 +1,157 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://img.collegedekhocdn.com/media/img/institute/logo/tce_logo.png"
+      type="image/x-icon"
+    />
+    <title>InterviewCat</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  </head>
+  <body>
+    <div class="container extra-container">
+      <div class="logo-container">
+        <div class="">
+          <a href="./index.html">
+            <img
+              src="https://img.collegedekhocdn.com/media/img/institute/logo/tce_logo.png"
+              alt="tce logo"
+            />
+          </a>
+        </div>
+        <a href="./index.html">
+          <h1>InterviewCat</h1>
+        </a>
+      </div>
+
+      <div class="card-container">
+        <div class="card flex-card">
+          <div class="left">
+            <h1>Welcome to InterviewCat !</h1>
+            <p>
+              InterviewCat is all about monitoring the students placements'
+              performance footprints
+            </p>
+            <img
+              src="./images/loginimg.png"
+              style="margin-top: 22px"
+              alt="illustration"
+            />
+          </div>
+
+          <div class="right">
+            <div class="heading">
+              <h1>Login</h1>
+            </div>
+            <div class="right-form">
+              <form class="form-group" method="post">
+                <div class="form-control">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                    pattern="^[A-Za-z0-9._%+-]+@tce.edu$"
+                  />
+                </div>
+
+                <div class="form-control">
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Password"
+                    minlength="8"
+                    required
+                  />
+                </div>
+
+                <div class="form-control">
+                  <input type="submit" class="btn btn-primary" value="Login" />
+                </div>
+
+                <div class="signup-redirect">
+                  <p style="color: #fff; margin: 0px">Create an account!</p>
+                  <a style="margin-left: 5px" href="./signup.html"
+                    ><strong>Create here</strong></a
+                  >
+                </div>
+              </form>
+            </div>
+            <!-- <img src="./images/trianglify-lowres.png" /> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-content">
+        <p style="color: #04286e">
+          © 2022,TCE, All Rights Reserved. Your use of this service is subject
+          to our Terms of Use and Privacy & Cookies Policy.
+        </p>
+      </div>
+    </div>
+    <!-- <canvas class="background"></canvas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script> -->
+  </body>
+
+  <!-- <script>
+    window.onload = function () {
+      // Particles.init({
+      //   selector: ".background",
+      // });
+      // Particles.init({
+      //   // normal options
+      //   selector: ".background",
+      //   maxParticles: 450,
+      //   // options for breakpoints
+      //   responsive: [
+      //     {
+      //       breakpoint: 768,
+      //       options: {
+      //         maxParticles: 200,
+      //         color: "#48F2E3",
+      //         connectParticles: true,
+      //       },
+      //     },
+      //     {
+      //       breakpoint: 425,
+      //       options: {
+      //         maxParticles: 100,
+      //         connectParticles: true,
+      //       },
+      //     },
+      //     {
+      //       breakpoint: 320,
+      //       options: {
+      //         maxParticles: 0,
+      //         // disables particles.js
+      //       },
+      //     },
+      //   ],
+      // });
+    };
+  </script> -->
+  <script type="module" src="./js/tokenutil.js"></script>
+  <script type="module" src="./js/login.js"></script>
+</html>
